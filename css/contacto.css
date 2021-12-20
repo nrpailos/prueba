@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2b1331;
+    background-image: linear-gradient(315deg, #2b1331 0%, #b9abcf 74%);
+    ;
+}
+
+header {
+    background-color: #dedee4;
+}
+
+nav {
+    background-color: azure;
+    display: flex;
+    /*el navegador queda flex - horizontal*/
+    flex-direction: row;
+    justify-content: end;
+    /* el menu queda al final*/
+}
+
+li {
+    display: inline-flex;
+    /*la lista queda de manera horizontal*/
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.fotoLogo {
+    width: 200px;
+    height: auto;
+    border: none;
+}
+
+form {
+    /*centrar el formulario en la pagina*/
+    display: grid;
+    padding: 1em;
+    /*hacer coincidir el fondo con el fondo del form*/
+    background: linear-gradient(315deg, #2b1331 0%, #b9abcf 74%);
+    border: 1px solid #c1c1c1;
+    margin: 2rem auto 0 auto;
+    max-width: 600px;
+    padding: 1em;
+}
+
+form input {
+    background: rgb(228, 195, 224);
+    border: 1px;
+}
+
+form textarea {
+    background: rgb(228, 195, 224);
+    border: 1px solid #9c9c9c;
+}
+
+form button {
+    background: lightgrey;
+    padding: 0.7em;
+    width: 100%;
+    border: 0;
+}
+
+form button:hover {
+    background: rgb(80, 6, 58);
+}
+
+label {
+    padding: 0.5em 0.5em 0.5em 0;
+}
+
+input {
+    padding: 0.7em;
+    margin-bottom: 0.5rem;
+}
+
+
+/*PARA LOS ELEMENTOS QUE TIENEN EL CURSOR*/
+
+input:focus {
+    outline: 3px solid rgb(124, 8, 105);
+}
+
+textarea:focus {
+    outline: 3px solid rgb(124, 8, 105);
+}
+
+
+/*MEDIAQUERY*/
+
+@media screen and (max-width: 480px) {
+    form {
+        background: #dedee4;
+        grid-template-columns: 75px 1fr;
+        grid-gap: 16px;
+    }
+    label {
+        grid-column: 1 / 2;
+    }
+    input,
+    button {
+        grid-column: 2 / 3;
+    }
+    nav {
+        justify-content: flex-start;
+    }
+    li {
+        font-size: 15px;
+    }
+}
