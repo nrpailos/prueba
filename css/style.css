@@ -38,6 +38,7 @@
                 width: 200px;
                 height: auto;
                 border: none;
+                pointer-events: none;
             }
             /*CONTENEDOR GRID*/
             
