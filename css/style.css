@@ -38,6 +38,7 @@
                 width: 200px;
                 height: auto;
                 border: none;
+                opacity: 100%;
                 pointer-events: none;
             }
             /*CONTENEDOR GRID*/
@@ -86,6 +87,16 @@
             
             img:hover {
                 opacity: 100%;
+                animation-name: aparecer;
+            }
+            
+            @keyframes aparecer {
+                100% {
+                    opacity: 1;
+                }
+                100% {
+                    opacity: 50;
+                }
             }
             
             footer {
