@@ -13,7 +13,7 @@
             header {
                 background-color: #dedee4;
             }
-            
+            /*COMIENDO DEL NAVEGADOR*/
             nav {
                 background-color: azure;
                 display: flex;
@@ -40,6 +40,7 @@
                 border: none;
                 opacity: 100%;
                 pointer-events: none;
+                       /*FIN DEL NAVEGADOR*/
             }
             /*CONTENEDOR GRID*/
             
